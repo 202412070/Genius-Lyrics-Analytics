@@ -79,6 +79,13 @@ En esta fase se realiza:
   Se calcula el número de palabras por letra y se visualiza mediante histogramas y boxplots para detectar outliers y entender la variabilidad del texto.
 - **Visualización del vocabulario:**  
   Se crea una WordCloud y se muestra un análisis de la frecuencia de palabras, proporcionando una visión general del contenido textual.
+  - **Análisis de sentimiento:**
+   Se evalúa la positividad (valence) de cada canción y se comparan los valores promedio de sentimiento entre géneros y artistas.
+ 
+  - **Modelado de temas:**
+    Utilizando Latent Dirichlet Allocation (LDA), implementado con la biblioteca Gensim, se identifican los temas más relevantes en los géneros y artistas analizados.
+ 
+  - **Embeddings:** se crea y entrena un modelo Word2Vec para convertir palabras en vectores. A partir de estos embeddings, se generan representaciones vectoriales para las canciones y los artistas, lo que permite identificar cuáles son más similares entre sí. Posteriormente, se reduce la dimensionalidad de estos vectores utilizando t-SNE, lo que permite visualizar las canciones y artistas en un espacio bidimensional."
 
 ### 2. Preprocesamiento del Texto
 
