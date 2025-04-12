@@ -62,6 +62,14 @@ En esta fase se realizan múltiples análisis con el fin de entender a fondo el 
 - **Visualización del Contenido Textual:**  
   Se crean una WordCloud que muestra visualmente las palabras más comunes en el corpus, permitiendo identificar rápidamente términos recurrentes y posibles sesgos en el lenguaje. También se crean varias WordCloud, basadas en el conteo de palabras o en TF-IDF, que muestran las palabras más importantes para cada artista o género.
 
+- **Análisis de sentimiento:**
+  Se evalúa la positividad (valence) de cada canción y se comparan los valores promedio de sentimiento entre géneros y artistas.
+
+ - **Modelado de temas:**
+   Utilizando Latent Dirichlet Allocation (LDA), implementado con la biblioteca Gensim, se identifican los temas más relevantes en los géneros y artistas analizados.
+
+ - **Embeddings:** se crea y entrena un modelo Word2Vec para convertir palabras en vectores. A partir de estos embeddings, se generan representaciones vectoriales para las canciones y los artistas, lo que permite identificar cuáles son más similares entre sí. Posteriormente, se reduce la dimensionalidad de estos vectores utilizando t-SNE, lo que permite visualizar las canciones y artistas en un espacio bidimensional."
+
 ### 2. Preprocesamiento del Texto
 
 El preprocesamiento es crucial para mejorar la calidad de las características extraídas del texto. Se abordan las siguientes tareas:
