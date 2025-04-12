@@ -156,3 +156,6 @@ Para instalar las dependencias necesarias, crea un conda environment usando el f
 
 ```bash
 conda env create -f env.yml
+
+
+Para instalar las librerias necesarias para los notebooks 1_1-EDA y 1_2-EDA, crea un entorno usando el fichero requirements_EDA.txt .
