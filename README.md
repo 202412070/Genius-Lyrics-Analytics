@@ -33,12 +33,13 @@ El objetivo de este proyecto es desarrollar un sistema para la clasificación au
 
 ## Descripción del Dataset
 
-El dataset utilizado contiene letras de canciones extraídas de la plataforma Genius y cuenta con, al menos, las siguientes columnas:
+El dataset utilizado contiene letras de canciones extraídas de la plataforma Genius y cuenta con las siguientes columnas:
 
 - **`lyrics`:** Texto completo de la letra de la canción.
 - **`tag`:** Etiqueta o categoría a la que pertenece la canción. El problema en este caso es de clasificación multiclase (3 clases).
 - **`artist`:** Nombre del artista de la canción.
-
+- **`year`:** Año de la canción
+- **`views`:** Número de visualizaciones de la cancíon
 El dataset fue ampliado o reducido (por ejemplo, mediante muestreo) para facilitar el procesamiento y experimentación, garantizando un número balanceado de registros por clase.
 
 ---
@@ -59,7 +60,7 @@ En esta fase se realizan múltiples análisis con el fin de entender a fondo el 
   Se calcula el número de palabras en cada letra y se visualiza la distribución mediante histogramas y boxplots. Este análisis ayuda a determinar la longitud máxima que se debe usar en el preprocesamiento (por ejemplo, para el padding de secuencias en Deep Learning).
 
 - **Visualización del Contenido Textual:**  
-  Se crea una WordCloud que muestra visualmente las palabras más comunes en el corpus, permitiendo identificar rápidamente términos recurrentes y posibles sesgos en el lenguaje.
+  Se crean una WordCloud que muestra visualmente las palabras más comunes en el corpus, permitiendo identificar rápidamente términos recurrentes y posibles sesgos en el lenguaje. También se crean varias WordCloud, basadas en el conteo de palabras o en TF-IDF, que muestran las palabras más importantes para cada artista o género.
 
 ### 2. Preprocesamiento del Texto
 
