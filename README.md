@@ -38,9 +38,9 @@ El dataset utilizado proviene de la plataforma **Genius** y contiene informació
 
 Cada clase cuenta con aproximadamente 120,000 registros. Para propósitos de procesamiento y experimentación, se ha realizado una reducción mediante muestreo.
 Se trata de un dataset muy pesado, así que se ha adaptado el código para que, según las capacidades del entorno de ejecución, se pueda decidir que porcentaje del dataset se usa.
-Recalcar que esta versión reducida del dataset estará balanceada por clases para que el rendimiento de los modelos no disminuya.
+Recalcar que esta versión reducida del dataset estará balanceada por clases para que el rendimiento de los modelos no disminuya. Esta versión reducida (`genius_song_lyrics`), con la que se ha trabajado, así que los datasets `genius_song_lyrics_tokenized` y `genius_artists` generados por el notebook [1_1-EDA](1_1-EDA) y utilizados en el notebook [1_2-EDA](1_2-EDA) se pueden encontrar en este [directorio](https://drive.google.com/drive/folders/1fMaua4canhWuvx8bIGY3fcX1LSS6l-sj?usp=sharing)
 
-LINK KAGGLE: https://www.kaggle.com/datasets/carlosgdcj/genius-song-lyrics-with-language-information
+LINK ORIGNAL DATASET IN KAGGLE: https://www.kaggle.com/datasets/carlosgdcj/genius-song-lyrics-with-language-information
 
 Se adjunta una muestra del dataset en la carpeta data.
 
@@ -156,6 +156,6 @@ Para instalar las dependencias necesarias, crea un conda environment usando el f
 
 ```bash
 conda env create -f env.yml
+```
 
-
-Para instalar las librerias necesarias para los notebooks 1_1-EDA y 1_2-EDA, crea un entorno usando el fichero requirements_EDA.txt .
+Para instalar las librerias necesarias para los notebooks [1_1-EDA](1_1-EDA) y [1_1-EDA](1_2-EDA), crea un entorno usando el fichero [requirements_EDA.txt](requirements_EDA.txt) .
