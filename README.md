@@ -33,6 +33,8 @@ El dataset utilizado proviene de la plataforma **Genius** y contiene informació
 - **`lyrics`**: el texto completo de la letra de la canción.
 - **`tag`**: etiqueta o categoría asignada a cada canción (el problema se enfoca en la clasificación multiclase, con 3 clases).
 - **`artist`**: el nombre del artista o grupo musical.
+- **`year`:** Año de la canción
+- **`views`:** Número de visualizaciones de la cancíon
 
 Cada clase cuenta con aproximadamente 120,000 registros. Para propósitos de procesamiento y experimentación, se ha realizado una reducción mediante muestreo.
 Se trata de un dataset muy pesado, así que se ha adaptado el código para que, según las capacidades del entorno de ejecución, se pueda decidir que porcentaje del dataset se usa.
